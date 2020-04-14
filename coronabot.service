@@ -1,0 +1,9 @@
+[Unit]
+Description=coronabot
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/covid/coronabot.py
+Restart=on-failure
+WorkingDirectory=/home/covid/
+[Install]
+WantedBy=multi-user.target
